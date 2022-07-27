@@ -1,0 +1,73 @@
+/* stylesheet is not organized */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header, main{
+    background-color: #FFF9F4;;
+}
+nav{
+    background-color: rgba(204, 202, 201, 0.562);
+}
+
+.nav-link{
+    background-color: rgba(192, 188, 188, 0.192);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.nav-link:hover{
+    background-color: rgba(192, 188, 188, 0.425);
+}
+
+.orange-color{
+    color: #FA804C;
+}
+.btn{
+    background-image: linear-gradient(rgba(61, 79, 243, 1),
+    rgba(53, 67, 188, 1));
+}
+
+.banner-img, .banner-text{
+    width: 50%;
+}
+.banner-text h1{
+    font-size:3.2rem;
+}
+.shoe-img{
+    background-color: #F1F1F1;
+    margin:5px;
+    border-radius: 15px;
+}
+.shoe-img img{
+    height: 200px;
+    width: 200px;
+    mix-blend-mode: multiply;
+}
+.banner-text{
+    padding-left:5%;
+}
+.banner-img{
+    padding-right:5%;
+}
+
+/* Media Query */
+@media screen and (max-width: 688px) {
+    .banner-img, .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-img{
+        order:2;
+    }
+    .banner-text{
+        order: 0;
+    }
+}
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .banner-img, .banner-text{
+        width: 90%;
+        text-align: center;
+    }
+}
